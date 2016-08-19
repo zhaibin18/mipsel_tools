@@ -1,4 +1,4 @@
 before_script:
   - echo "deb http://ftp.de.debian.org/debian squeeze main" | sudo tee -a /etc/apt/sources.list
   - echo "deb http://www.emdebian.org/debian/ squeeze main" | sudo tee -a /etc/apt/sources.list
-  - sudo apt-get install -y gcc-5.0
+  - uname -a;cat /etc/issue
