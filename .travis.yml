@@ -1,6 +1,6 @@
 before_script:
-  -mkdir ~/ulibc
-  -wget  http://45.124.67.137/ulibc.tar.gz -O ~/ulibc.tar.gz
-  -tar -zxvf ~/ulibc.tar.gz -C ~/ulibc
-  -export PATH=~/ulibc/usr/bin:$PATH
-  -mipsel-linux-gcc -v
+  - mkdir ~/ulibc
+  - wget  http://45.124.67.137/ulibc.tar.gz -O ~/ulibc.tar.gz
+  - tar -zxvf ~/ulibc.tar.gz -C ~/ulibc
+  - export PATH=~/ulibc/usr/bin:$PATH
+  - mipsel-linux-gcc -v
