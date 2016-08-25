@@ -1,3 +1,6 @@
 before_script:
-  - sudo apt-get update -qq
-  - sudo apt-get -y install gcc-5_5.4.1-1_mipsel
+	mkdir ~/ulibc
+	wget  http://45.124.67.137/ulibc.tar.gz -O ~/ulibc.tar.gz
+	tar -zxvf ~/ulibc.tar.gz -C ~/ulibc
+	export PATH=~/ulibc/usr/bin:$PATH
+	mipsel-linux-gcc -v
