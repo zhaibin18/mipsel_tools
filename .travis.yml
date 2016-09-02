@@ -1,9 +1,1 @@
-before_script:
-  - mkdir ~/ulibc
-  - wget  http://45.124.67.137/ulibc.tar.gz -O ~/ulibc.tar.gz
-  - tar -zxvf ~/ulibc.tar.gz -C ~/ulibc
-  - export PATH=~/ulibc/usr/bin:$PATH
-  - export CC=mipsel-linux-gcc
-  - git clone https://github.com/clowwindy/ChinaDNS.git
-  - cd ChinaDNS
-  - ./autogen.sh && ./configure --host=mipsel-linux --enable-static && make
+
