@@ -1,1 +1,3 @@
-Build mipsel tools for ASUS AC66U
+1、使用华硕官方固件，将文件拷配到jffs分区中即可使用；
+2、全部静态编译，使用upx压缩，节省空间；
+3、可使用privoxy将socks代理转换为http代理。
