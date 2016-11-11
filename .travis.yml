@@ -12,7 +12,7 @@
     "cd mpfr-3.1.5",
     "./configure --prefix=/home/travis/build/zhaibin18/mpfr && make && make install",
     "cd ~",
-    "wget "https://ftp.gnu.org/gnu/gmp/gmp-6.1.1.tar.xz",
+    "wget https://ftp.gnu.org/gnu/gmp/gmp-6.1.1.tar.xz",
     "tar -pxf gmp-6.1.1.tar.xz",
     "mkdir /home/travis/build/zhaibin18/gmp",
     "cd gmp-6.1.1",
