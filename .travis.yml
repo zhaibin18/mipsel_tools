@@ -2,9 +2,10 @@
 {
   "before_script": [
     "sudo apt-get update",
-    "sudo apt-get -y install gcc-5.0",
+    "sudo apt-get install build-essential software-properties-common -y",
     "uname",
-    "cat /etc/issue"
+    "cat /etc/issue",
+    "git clone https://github.com/gcc-mirror/gcc.git"
   ],
   "language": "ruby",
   "group": "stable",
