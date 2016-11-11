@@ -2,7 +2,7 @@
 {
   "before_script": [
     "sudo apt-get update",
-    "sudo apt-get -y gcc-5.0",
+    "sudo apt-get -y install gcc-5.0",
     "uname",
     "cat /etc/issue"
   ],
