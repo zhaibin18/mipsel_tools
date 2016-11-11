@@ -24,11 +24,17 @@
     "cd mpc-1.0.3",
     "./configure --prefix=/home/travis/build/zhaibin18/mpc --with-gmp=/home/travis/build/zhaibin18/gmp --with-mpfr=/home/travis/build/zhaibin18/mpfr && make && make install",
     "cd ~",
+    "mkdir isl",
+    "wget http://isl.gforge.inria.fr/isl-0.16.tar.gz",
+    "tar -zvf isl-0.16.tar.gz",
+    "cd isl-0.16",
+    "./configure --prefix=/home/travis/build/zhaibin18/isl --with-gmp-prefix=/home/travis/build/zhaibin18/gmp && make && make install "
+    "cd ~",
     "wget http://www.netgull.com/gcc/releases/gcc-6.2.0/gcc-6.2.0.tar.gz",
     "mkdir gcc",
     "tar -zxf gcc-6.2.0.tar.gz",
     "cd gcc-6.2.0",
-    "./configure --prefix=/home/travis/build/zhaibin18/gcc --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mipsel-linux --enable-checking=release --enable-languages=c,c++,go --disable-multilib --with-gmp=/home/travis/build/zhaibin18/gmp --with-mpfr=/home/travis/build/zhaibin18/mpfr --with-mpc=/home/travis/build/zhaibin18/mpc",
+    "./configure --prefix=/home/travis/build/zhaibin18/gcc --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mipsel-linux --enable-checking=release --enable-languages=c,c++,go --disable-multilib --with-gmp=/home/travis/build/zhaibin18/gmp --with-mpfr=/home/travis/build/zhaibin18/mpfr --with-mpc=/home/travis/build/zhaibin18/mpc --with-isl=/home/travis/build/zhaibin18/isl",
     "make"
 
   ],
