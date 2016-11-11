@@ -7,7 +7,7 @@
     "uname -a",
     "cat /etc/issue",
     "wget http://www.netgull.com/gcc/releases/gcc-6.2.0/gcc-6.2.0.tar.gz",
-    "tar -zxvfgcc-6.2.0.tar.gz "
+    "tar -zxf gcc-6.2.0.tar.gz"
   ],
   "language": "ruby",
   "group": "stable",
