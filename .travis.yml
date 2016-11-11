@@ -35,7 +35,7 @@
     "mkdir gcc6_tmp",
     "tar -zxf gcc-6.2.0.tar.gz",
     "cd gcc6_tmp",
-    "../gcc6.2.0/configure --prefix=/home/travis/build/zhaibin18/gcc --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mipsel-linux --enable-checking=release --enable-languages=c,c++,go --disable-multilib --with-gmp=/home/travis/build/zhaibin18/gmp --with-mpfr=/home/travis/build/zhaibin18/mpfr --with-mpc=/home/travis/build/zhaibin18/mpc --with-isl=/home/travis/build/zhaibin18/isl",
+    "../gcc-6.2.0/configure --prefix=/home/travis/build/zhaibin18/gcc --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mipsel-linux --enable-checking=release --enable-languages=c,c++,go --disable-multilib --with-gmp=/home/travis/build/zhaibin18/gmp --with-mpfr=/home/travis/build/zhaibin18/mpfr --with-mpc=/home/travis/build/zhaibin18/mpc --with-isl=/home/travis/build/zhaibin18/isl",
     "make"
   ],
   "language": "c",
