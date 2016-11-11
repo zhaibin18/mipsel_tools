@@ -3,9 +3,11 @@
   "before_script": [
     "sudo apt-get update",
     "sudo apt-get install build-essential software-properties-common -y",
-    "uname",
+    "sudo apt-get install libgmp-dev libmpfr-dev libmpc-dev libc6-dev zlib1g-dev g++ -y",
+    "uname -a",
     "cat /etc/issue",
-    "git clone https://github.com/gcc-mirror/gcc.git"
+    "git clone https://github.com/gcc-mirror/gcc.git",
+    "ls"
   ],
   "language": "ruby",
   "group": "stable",
