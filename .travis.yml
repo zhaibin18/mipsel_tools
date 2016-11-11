@@ -7,7 +7,9 @@
     "uname -a",
     "cat /etc/issue",
     "wget http://www.netgull.com/gcc/releases/gcc-6.2.0/gcc-6.2.0.tar.gz",
-    "tar -zxf gcc-6.2.0.tar.gz"
+    "tar -zxf gcc-6.2.0.tar.gz",
+    "cd gcc-6.2.0",
+    "./configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mipsel-linux --enable-checking=release --enable-languages=c,c++,go --disable-multilib"
   ],
   "language": "ruby",
   "group": "stable",
